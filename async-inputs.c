@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <wiringPi.h>
 #define BUTTON_PIN0 0
-#define BUTTON_PIN1 4
-#define LED_LIGHT 5
+#define BUTTON_PIN1 7
+#define LED_LIGHT 1
 
 volatile int eventCounter = 0;
 void myirq1(void) {
@@ -40,9 +40,9 @@ int main (void) {
 		// printf( "%d\n", eventCounter );
 		// eventCounter = 0;
 		digitalWrite(LED_LIGHT, LOW);
-		delay( 500 ); // wait 1 second
+		delay( 500 ); // wait 0.5 second
 		digitalWrite(LED_LIGHT, HIGH);
-		delay( 500 ); // wait 1 second
+		delay( 500 ); // wait 0.5 second
 	}
 	return 0;
 }
