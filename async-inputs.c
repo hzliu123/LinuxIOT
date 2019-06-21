@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <wiringPi.h>
 #define BUTTON_PIN0 0
-#define BUTTON_PIN1 7
-#define LED_LIGHT 1
+#define BUTTON_PIN1 4
+#define LED_LIGHT 5
 
 volatile int eventCounter = 0;
 void myirq1(void) {
